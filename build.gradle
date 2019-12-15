@@ -1,5 +1,14 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.1.0'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.makotomiyamoto.prxy.Client'
+        )
+    }
 }
 
 group 'com.makotomiyamoto.prxy'
